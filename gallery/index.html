@@ -29,7 +29,7 @@
     .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
     .grid a { display: flex; flex-direction: column; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; text-decoration: none; color: var(--text); }
     .grid a:hover .t { color: var(--accent); }
-    .grid img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--line); }
+    .grid img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: var(--line); }
     .t { padding: .6rem .8rem 0; font-weight: 600; line-height: 1.3; }
     .m { padding: .2rem .8rem .8rem; color: var(--muted); font-size: .9rem; }
     .button { display: inline-block; margin-top: 1rem; padding: .75rem 1.5rem; border-radius: 8px; background: var(--accent); color: var(--bg); font-weight: 600; text-decoration: none; }
@@ -41,36 +41,12 @@
     <a href="/"><img src="/logo.jpg" alt="Bear Barn Farm home"></a>
     <h1>Our designs</h1>
     <p>Every design in our shop. Tap one to see it on Etsy.</p>
-    <nav aria-label="Collections"><a href="#christmas">Christmas</a> <a href="#winter">Winter</a> <a href="#thanksgiving-and-fall">Thanksgiving and fall</a> <a href="#new-year-2027">New Year 2027</a> <a href="#valentines-day">Valentine&#x27;s Day</a> <a href="#birthdays">Birthdays</a> <a href="#cats-books-and-games">Cats, books and games</a> <a href="#retro-robots">Retro robots</a> <a href="#everyday-art">Everyday art</a></nav>
+    <nav aria-label="Collections"><a href="#christmas">Christmas</a> <a href="#new-year-2027">New Year 2027</a> <a href="#winter">Winter</a> <a href="#thanksgiving-and-fall">Thanksgiving and fall</a> <a href="#valentines-day">Valentine&#x27;s Day</a> <a href="#birthdays">Birthdays</a> <a href="#cats-books-and-games">Cats, books and games</a> <a href="#retro-robots">Retro robots</a> <a href="#everyday-art">Everyday art</a> <a href="#posters-and-framed-prints">Posters and framed prints</a></nav>
   </header>
   <main>
   <section id="christmas">
     <h2>Christmas</h2>
     <ul class="grid">
-      <li><a href="https://www.etsy.com/listing/4624298164" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/dd1f32/8916224458/il_570xN.8916224458_1dwi.jpg" alt="Bear in the Barn Christmas Print" loading="lazy" width="570" height="321">
-        <span class="t">Bear in the Barn Christmas Print</span>
-        <span class="m">Framed print · $32.00</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624292223" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/e0cd79/8964003973/il_570xN.8964003973_kfxv.jpg" alt="Santa Feeding Reindeer Christmas Print" loading="lazy" width="570" height="321">
-        <span class="t">Santa Feeding Reindeer Christmas Print</span>
-        <span class="m">Framed print · $32.00</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624298646" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/2ed8a6/8916227376/il_570xN.8916227376_r9r3.jpg" alt="Nutcrackers Guarding the Chicken Coop" loading="lazy" width="570" height="321">
-        <span class="t">Nutcrackers Guarding the Chicken Coop</span>
-        <span class="m">Framed print · $32.00</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624292299" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/38ea89/8916227688/il_570xN.8916227688_6su1.jpg" alt="Covered Bridge Sleigh Ride Christmas Print" loading="lazy" width="570" height="321">
-        <span class="t">Covered Bridge Sleigh Ride Christmas Print</span>
-        <span class="m">Framed print · $32.00</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624298724" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/472a85/8964004929/il_570xN.8964004929_f4od.jpg" alt="Christmas Morning Farmhouse Print" loading="lazy" width="570" height="321">
-        <span class="t">Christmas Morning Farmhouse Print</span>
-        <span class="m">Framed print · $32.00</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624292361" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/ded161/8964005227/il_570xN.8964005227_3ihb.jpg" alt="Red Barn under Northern Lights Print" loading="lazy" width="570" height="321">
-        <span class="t">Red Barn under Northern Lights Print</span>
-        <span class="m">Framed print · $32.00</span></a></li>
       <li><a href="https://www.etsy.com/listing/4624029894" rel="noopener">
         <img src="https://i.etsystatic.com/38046299/r/il/c10b1d/8914608224/il_570xN.8914608224_8nit.jpg" alt="Santa, Reindeer and a UFO" loading="lazy" width="570" height="321">
         <span class="t">Santa, Reindeer and a UFO</span>
@@ -90,10 +66,6 @@
       <li><a href="https://www.etsy.com/listing/4624175352" rel="noopener">
         <img src="https://i.etsystatic.com/38046299/r/il/f41749/8963067465/il_570xN.8963067465_3wso.jpg" alt="Sleigh at the Covered Bridge" loading="lazy" width="570" height="321">
         <span class="t">Sleigh at the Covered Bridge</span>
-        <span class="m">Frame TV art · $5.49</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624175504" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/62b13d/8915297750/il_570xN.8915297750_h43i.jpg" alt="Midnight at the Farmhouse Window" loading="lazy" width="570" height="321">
-        <span class="t">Midnight at the Farmhouse Window</span>
         <span class="m">Frame TV art · $5.49</span></a></li>
       <li><a href="https://www.etsy.com/listing/4624151590" rel="noopener">
         <img src="https://i.etsystatic.com/38046299/r/il/840879/8915100100/il_570xN.8915100100_3vp4.jpg" alt="The Three Wise Men and the Christmas Tariffs" loading="lazy" width="570" height="321">
@@ -121,6 +93,35 @@
         <span class="m">Frame TV art · $5.49</span></a></li>
     </ul>
   </section>
+  <section id="new-year-2027">
+    <h2>New Year 2027</h2>
+    <ul class="grid">
+      <li><a href="https://www.etsy.com/listing/4624175504" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/62b13d/8915297750/il_570xN.8915297750_h43i.jpg" alt="Midnight at the Farmhouse Window" loading="lazy" width="570" height="321">
+        <span class="t">Midnight at the Farmhouse Window</span>
+        <span class="m">Frame TV art · $5.49</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624175598" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/dd1631/8915291054/il_570xN.8915291054_5mn1.jpg" alt="First Sunrise of 2027" loading="lazy" width="570" height="321">
+        <span class="t">First Sunrise of 2027</span>
+        <span class="m">Frame TV art · $5.49</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624569142" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/82fad1/8966339425/il_570xN.8966339425_3zi7.jpg" alt="2027 Farmhouse Barn Party with Fireworks" loading="lazy" width="570" height="321">
+        <span class="t">2027 Farmhouse Barn Party with Fireworks</span>
+        <span class="m">Frame TV art · $5.49</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624564393" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/d6591d/8918566346/il_570xN.8918566346_8ss7.jpg" alt="2027 Gold Art Deco New Year" loading="lazy" width="570" height="321">
+        <span class="t">2027 Gold Art Deco New Year</span>
+        <span class="m">Frame TV art · $5.49</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624564563" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/bcea0e/8966340099/il_570xN.8966340099_65q7.jpg" alt="2027 Confetti" loading="lazy" width="570" height="321">
+        <span class="t">2027 Confetti</span>
+        <span class="m">Frame TV art · $5.49</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624564655" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/5f0c4b/8918568424/il_570xN.8918568424_nhqr.jpg" alt="2027 Balloons" loading="lazy" width="570" height="321">
+        <span class="t">2027 Balloons</span>
+        <span class="m">Frame TV art · $5.49</span></a></li>
+    </ul>
+  </section>
   <section id="winter">
     <h2>Winter</h2>
     <ul class="grid">
@@ -144,31 +145,6 @@
       <li><a href="https://www.etsy.com/listing/4624565781" rel="noopener">
         <img src="https://i.etsystatic.com/38046299/r/il/897a5b/8918577302/il_570xN.8918577302_ezik.jpg" alt="Pumpkin Patch with a Hidden Hedgehog" loading="lazy" width="570" height="321">
         <span class="t">Pumpkin Patch with a Hidden Hedgehog</span>
-        <span class="m">Frame TV art · $5.49</span></a></li>
-    </ul>
-  </section>
-  <section id="new-year-2027">
-    <h2>New Year 2027</h2>
-    <ul class="grid">
-      <li><a href="https://www.etsy.com/listing/4624175598" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/dd1631/8915291054/il_570xN.8915291054_5mn1.jpg" alt="First Sunrise of 2027" loading="lazy" width="570" height="321">
-        <span class="t">First Sunrise of 2027</span>
-        <span class="m">Frame TV art · $5.49</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624569142" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/82fad1/8966339425/il_570xN.8966339425_3zi7.jpg" alt="2027 Farmhouse Barn Party with Fireworks" loading="lazy" width="570" height="321">
-        <span class="t">2027 Farmhouse Barn Party with Fireworks</span>
-        <span class="m">Frame TV art · $5.49</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624564393" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/d6591d/8918566346/il_570xN.8918566346_8ss7.jpg" alt="2027 Gold Art Deco New Year" loading="lazy" width="570" height="321">
-        <span class="t">2027 Gold Art Deco New Year</span>
-        <span class="m">Frame TV art · $5.49</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624564563" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/bcea0e/8966340099/il_570xN.8966340099_65q7.jpg" alt="2027 Confetti" loading="lazy" width="570" height="321">
-        <span class="t">2027 Confetti</span>
-        <span class="m">Frame TV art · $5.49</span></a></li>
-      <li><a href="https://www.etsy.com/listing/4624564655" rel="noopener">
-        <img src="https://i.etsystatic.com/38046299/r/il/5f0c4b/8918568424/il_570xN.8918568424_nhqr.jpg" alt="2027 Balloons" loading="lazy" width="570" height="321">
-        <span class="t">2027 Balloons</span>
         <span class="m">Frame TV art · $5.49</span></a></li>
     </ul>
   </section>
@@ -279,6 +255,35 @@
         <img src="https://i.etsystatic.com/38046299/r/il/87397b/8963070159/il_570xN.8963070159_ahas.jpg" alt="A Single Step" loading="lazy" width="570" height="321">
         <span class="t">A Single Step</span>
         <span class="m">Frame TV art · $5.49</span></a></li>
+    </ul>
+  </section>
+  <section id="posters-and-framed-prints">
+    <h2>Posters and framed prints</h2>
+    <ul class="grid">
+      <li><a href="https://www.etsy.com/listing/4624298164" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/dd1f32/8916224458/il_570xN.8916224458_1dwi.jpg" alt="Bear in the Barn Christmas Print" loading="lazy" width="570" height="321">
+        <span class="t">Bear in the Barn Christmas Print</span>
+        <span class="m">Print · from $32</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624292223" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/e0cd79/8964003973/il_570xN.8964003973_kfxv.jpg" alt="Santa Feeding Reindeer Christmas Print" loading="lazy" width="570" height="321">
+        <span class="t">Santa Feeding Reindeer Christmas Print</span>
+        <span class="m">Print · from $32</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624298646" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/2ed8a6/8916227376/il_570xN.8916227376_r9r3.jpg" alt="Nutcrackers Guarding the Chicken Coop" loading="lazy" width="570" height="321">
+        <span class="t">Nutcrackers Guarding the Chicken Coop</span>
+        <span class="m">Print · from $32</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624292299" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/38ea89/8916227688/il_570xN.8916227688_6su1.jpg" alt="Covered Bridge Sleigh Ride Christmas Print" loading="lazy" width="570" height="321">
+        <span class="t">Covered Bridge Sleigh Ride Christmas Print</span>
+        <span class="m">Print · from $32</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624298724" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/472a85/8964004929/il_570xN.8964004929_f4od.jpg" alt="Christmas Morning Farmhouse Print" loading="lazy" width="570" height="321">
+        <span class="t">Christmas Morning Farmhouse Print</span>
+        <span class="m">Print · from $32</span></a></li>
+      <li><a href="https://www.etsy.com/listing/4624292361" rel="noopener">
+        <img src="https://i.etsystatic.com/38046299/r/il/ded161/8964005227/il_570xN.8964005227_3ihb.jpg" alt="Red Barn under Northern Lights Print" loading="lazy" width="570" height="321">
+        <span class="t">Red Barn under Northern Lights Print</span>
+        <span class="m">Print · from $32</span></a></li>
     </ul>
   </section>
     <p style="text-align:center"><a class="button" href="https://www.etsy.com/shop/BearBarnFarm">See the whole shop on Etsy</a></p>
